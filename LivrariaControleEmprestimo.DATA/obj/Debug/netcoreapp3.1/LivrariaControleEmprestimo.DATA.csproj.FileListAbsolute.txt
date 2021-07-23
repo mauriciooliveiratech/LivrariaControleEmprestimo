@@ -1,0 +1,12 @@
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\bin\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.deps.json
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\bin\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.runtimeconfig.json
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\bin\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.runtimeconfig.dev.json
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\bin\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.dll
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\bin\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.pdb
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.csproj.AssemblyReference.cache
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.AssemblyInfoInputs.cache
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.AssemblyInfo.cs
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.csproj.CoreCompileInputs.cache
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.dll
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.pdb
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\netcoreapp3.1\LivrariaControleEmprestimo.DATA.genruntimeconfig.cache
