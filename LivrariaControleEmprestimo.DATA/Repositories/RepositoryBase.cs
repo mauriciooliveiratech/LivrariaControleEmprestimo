@@ -54,12 +54,12 @@ namespace LivrariaControleEmprestimo.DATA.Repositories
         public T Incluir(T objeto)
         {
             _Contexto.Set<T>().Add(objeto);
-            return objeto;
-
+            
             if (_SaveChanges)
             {
                 _Contexto.SaveChanges();
             }
+            return objeto;
         }
 
         public void SaveChages()

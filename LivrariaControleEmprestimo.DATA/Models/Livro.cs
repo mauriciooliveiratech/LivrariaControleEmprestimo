@@ -13,7 +13,7 @@ namespace LivrariaControleEmprestimo.DATA.Models
     {
         public Livro()
         {
-            LivroCliente = new HashSet<LivroCliente>();
+            LivroCliente = new HashSet<LivroClienteEmprestimo>();
         }
 
         [Key]
@@ -33,6 +33,6 @@ namespace LivrariaControleEmprestimo.DATA.Models
         public string Editora { get; set; }
 
         [InverseProperty("IdLivroNavigation")]
-        public virtual ICollection<LivroCliente> LivroCliente { get; set; }
+        public virtual ICollection<LivroClienteEmprestimo> LivroCliente { get; set; }
     }
 }

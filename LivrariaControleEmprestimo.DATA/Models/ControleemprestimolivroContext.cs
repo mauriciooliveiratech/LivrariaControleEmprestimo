@@ -20,7 +20,7 @@ namespace LivrariaControleEmprestimo.DATA.Models
 
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<Livro> Livro { get; set; }
-        public virtual DbSet<LivroCliente> LivroCliente { get; set; }
+        public virtual DbSet<LivroClienteEmprestimo> LivroCliente { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -60,7 +60,7 @@ namespace LivrariaControleEmprestimo.DATA.Models
                 entity.Property(e => e.Nome).IsUnicode(false);
             });
 
-            modelBuilder.Entity<LivroCliente>(entity =>
+            modelBuilder.Entity<LivroClienteEmprestimo>(entity =>
             {
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
