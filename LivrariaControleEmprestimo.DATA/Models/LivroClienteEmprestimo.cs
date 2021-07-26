@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 namespace LivrariaControleEmprestimo.DATA.Models
 {
     [Table("Livro_Cliente")]
-    public partial class LivroCliente
+    public partial class LivroClienteEmprestimo
     {
         [Key]
         [Column("id")]
