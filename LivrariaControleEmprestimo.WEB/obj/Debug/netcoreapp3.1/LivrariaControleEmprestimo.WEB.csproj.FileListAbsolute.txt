@@ -152,3 +152,4 @@ C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaContr
 C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Index.cshtml.g.cs
+C:\Users\Mauricio Oliveira\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Create.cshtml.g.cs
