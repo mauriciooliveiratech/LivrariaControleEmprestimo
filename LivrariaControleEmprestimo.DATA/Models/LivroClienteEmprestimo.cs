@@ -9,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LivrariaControleEmprestimo.DATA.Models
 {
-    [Table("Livro_Cliente")]
     public partial class LivroClienteEmprestimo
     {
         [Key]
@@ -19,16 +18,16 @@ namespace LivrariaControleEmprestimo.DATA.Models
         public int IdCliente { get; set; }
         [Column("idLivro")]
         public int IdLivro { get; set; }
-        [Column("dataEmprestimo", TypeName = "datetime")]
-        public DateTime DataEmprestimo { get; set; }
-        [Column("dataDevolucao", TypeName = "datetime")]
-        public DateTime DataDevolucao { get; set; }
+        [Column("dataemprestimo", TypeName = "datetime")]
+        public DateTime Dataemprestimo { get; set; }
+        [Column("datadevolucao", TypeName = "datetime")]
+        public DateTime Datadevolucao { get; set; }
 
         [ForeignKey(nameof(IdCliente))]
-        [InverseProperty(nameof(Cliente.LivroCliente))]
+        [InverseProperty(nameof(Cliente.LivroClienteEmprestimo))]
         public virtual Cliente IdClienteNavigation { get; set; }
         [ForeignKey(nameof(IdLivro))]
-        [InverseProperty(nameof(Livro.LivroCliente))]
+        [InverseProperty(nameof(Livro.LivroClienteEmprestimo))]
         public virtual Livro IdLivroNavigation { get; set; }
     }
 }

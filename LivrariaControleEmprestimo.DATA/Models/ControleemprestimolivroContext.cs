@@ -20,13 +20,14 @@ namespace LivrariaControleEmprestimo.DATA.Models
 
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<Livro> Livro { get; set; }
-        public virtual DbSet<LivroClienteEmprestimo> LivroCliente { get; set; }
+        public virtual DbSet<LivroClienteEmprestimo> LivroClienteEmprestimo { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-               optionsBuilder.UseSqlServer("Data Source=DESKTOP-SN4VSJQ;Initial Catalog=ControleEmprestimoLivro;User ID=sa;Password=12345678");
+
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-SN4VSJQ;Initial Catalog=ControleEmprestimoLivro;User ID=sa;Password=12345678");
             }
         }
 
@@ -36,8 +37,6 @@ namespace LivrariaControleEmprestimo.DATA.Models
 
             modelBuilder.Entity<Cliente>(entity =>
             {
-                entity.Property(e => e.Id).ValueGeneratedNever();
-
                 entity.Property(e => e.Bairro).IsUnicode(false);
 
                 entity.Property(e => e.Cidade).IsUnicode(false);
@@ -51,38 +50,29 @@ namespace LivrariaControleEmprestimo.DATA.Models
 
             modelBuilder.Entity<Livro>(entity =>
             {
-                entity.Property(e => e.Id).ValueGeneratedNever();
+                entity.Property(e => e.Autor).IsFixedLength(true);
 
-                entity.Property(e => e.Autor).IsUnicode(false);
+                entity.Property(e => e.Editora).IsFixedLength(true);
 
-                entity.Property(e => e.Editora).IsUnicode(false);
-
-                entity.Property(e => e.Nome).IsUnicode(false);
+                entity.Property(e => e.Nome).IsFixedLength(true);
             });
 
             modelBuilder.Entity<LivroClienteEmprestimo>(entity =>
             {
-                entity.Property(e => e.Id).ValueGeneratedNever();
-
                 entity.HasOne(d => d.IdClienteNavigation)
-                    .WithMany(p => p.LivroCliente)
+                    .WithMany(p => p.LivroClienteEmprestimo)
                     .HasForeignKey(d => d.IdCliente)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Livro_Cliente_Cliente");
+                    .HasConstraintName("FK_LivroClienteEmprestimo_Cliente");
 
                 entity.HasOne(d => d.IdLivroNavigation)
-                    .WithMany(p => p.LivroCliente)
+                    .WithMany(p => p.LivroClienteEmprestimo)
                     .HasForeignKey(d => d.IdLivro)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Livro_Cliente_Livro");
+                    .HasConstraintName("FK_LivroClienteEmprestimo_Livro");
             });
 
             OnModelCreatingPartial(modelBuilder);
-        }
-
-        internal object Find(object[] variavel)
-        {
-            throw new NotImplementedException();
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
