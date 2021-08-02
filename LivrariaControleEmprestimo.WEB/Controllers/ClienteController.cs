@@ -16,6 +16,10 @@ namespace LivrariaControleEmprestimo.WEB.Controllers
             List<Cliente> oListCliente = oClienteService.oRepositoryCliente.SelecionarTodos();
             return View(oListCliente);
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
 
     }
 }

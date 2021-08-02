@@ -7,5 +7,6 @@ namespace LivrariaControleEmprestimo.DATA.Interface
 {
     interface IRepositoryLivroClienteEmprestimo : IRepositoryModel<LivroClienteEmprestimo>
     {
+
     }
 }
